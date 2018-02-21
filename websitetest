@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+  <title> Frank Perrino BUA 235 </title>
+</head>
+
+<body bgcolor="yellow">
+  <font color="blue">
+
+    <div class="tab">
+      <button class="tablinks"
+      onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="tablinks"
+        onclick="openCity(event, 'Activities')">Activities</button>
+        <button class="tablinks"
+        onclick="openCity(event, 'Relaxation')">Relaxation</button>
+        <button class="tablinks"
+        onclick="openCity(event, 'Foods')">Foods</button>
+  </div>
+
+<div id="Home" class="tabcontent">
+<h1>My Dog Mabrey</h1>
+
+<h2>By Frank Perrino</h2>
+
+  <p>Mabrey is a two year old golden retriever. She was born in West Hartford
+  and we adopted her two years ago. Though she is now two she still acts like
+a puppy and loves to chew on toys or go through our trash. She also never gets
+tired of play time or tired on walks. Some of her favorite hobbies include
+chasing squirells and running through the forrest, although she does love to
+take long naps as well. From the time she was first adopted Mabrey has been the
+glue that holds the family together. Withought her I don't know where we would
+be today. </p>
+
+<p>This website will be dedicated to Mabrey. Below is a picture of mabrey as a puppy, as well as several tabs dedicated to some of her
+  very unique charachteristics<p/>
+</div>
+
+  <div class="picture">
+    <img src="https://www.facebook.com/photo.php?fbid=423678468063324&set=a.190258068072033.1073741829.100012635227879&type=3&theater">
+  </div>
+
+
+  <div id="Activities" class="tabcontent">
+    <h3>Mabrey's Favorite Things to Do</h3>
+    <p> Mabrey is a dog. Therefore she loves to do many of the same things
+    that dogs usually do. She loves playing with her toys outside. Her favorite
+    toys include her rope for tug of war, and any type of stuffed animal that
+    she can attack. She also enjoys going on long walks where there is plenty
+   of nature to explore and new smells in in the forrest. However, unlike most
+  dogs, she dislikes rides in the car, as these make her nausous and
+ uncomfortable. </p>
+  </div>
+
+  <div id="Relaxation" class="tabcontent">
+    <h3>Mabrey's favorite relaxation spots</h3>
+    Another major part of Mabrey's life is relaxation. Much like a two year old
+    human would, she will not rest for most of the day and is constantly running
+    around. Then at about 8:00 pm she climbs onto her bed or the couch and
+    promptly tries to sleep. She does not care if the lights are on or if There
+    is noise around her, if she is tired she will sleep. On certain occasions
+    she will jump in bed with one of our family members, but most of the time
+    she sticks to her bed or her couch.
+  </div>
+
+  <div id="Foods" class="tabcontent">
+    <h3>Mabrey's favorite foods</h3>
+    Mabrey's life, when it is not focused on her family, is focused on her next
+    meal. Any time one of us is making food she is right there waiting for
+    something to drop. Then when we are eating the food, she will be right
+    there again waiting for us to giver her something. It is not that she is
+    starving, far from it, she just craves for human food and is usually
+    rewarded. It is tough to resist when she starts to beg anyway.
+  </div>
+
+
+
+  <script>
+  function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+  }
+  </script>
+
+
+
+</font>
+</body>
+</html>
